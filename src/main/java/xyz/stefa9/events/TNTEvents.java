@@ -17,8 +17,8 @@ public class TNTEvents implements Listener {
         Player player = event.getPlayer();
 
         if(event.getItem() == null) return;
-        if(event.getAction() != Action.RIGHT_CLICK_AIR) { event.setCancelled(true); return; }
         if(!(event.getItem().getItemMeta().equals(ItemManager.TNTBarrel.getItemMeta()))) return;
+        if(event.getAction() != Action.RIGHT_CLICK_AIR) return;
 
         event.setCancelled(true);
 
