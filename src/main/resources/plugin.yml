@@ -1,0 +1,4 @@
+name: TNTBarrel
+version: '${project.version}'
+main: xyz.stefa9.tntbarrel
+api-version: '1.20'
